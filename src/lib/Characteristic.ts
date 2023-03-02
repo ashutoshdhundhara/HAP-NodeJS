@@ -3080,6 +3080,7 @@ export class Characteristic extends EventEmitter {
         })
         : this.value;
 
+      object.statusCode = this.statusCode;
       object.value = formatOutgoingCharacteristicValue(value, this.props);
     }
 
@@ -3108,6 +3109,7 @@ export class Characteristic extends EventEmitter {
       maxDataLen: this.props.maxDataLen,
       "valid-values": this.props.validValues,
       "valid-values-range": this.props.validValueRanges,
+      statusCode: this.statusCode,
     };
   }
 

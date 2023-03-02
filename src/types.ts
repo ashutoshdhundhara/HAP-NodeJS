@@ -138,6 +138,7 @@ export interface CharacteristicJsonObject {
   maxDataLen?: number,
   "valid-values"?: number[],
   "valid-values-range"?: [min: number, max: number],
+  statusCode: number;
 }
 
 /**
