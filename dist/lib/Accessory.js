@@ -860,6 +860,7 @@ var Accessory = /** @class */ (function (_super) {
                         return [4 /*yield*/, Promise.all(this.services.map(function (service) { return service.toHAP(connection, contactGetHandlers); }))];
                     case 1:
                         accessory = (_e.services = _f.sent(),
+                            _e.category = this.category,
                             _e);
                         accessories = [accessory];
                         if (!!this.bridged) return [3 /*break*/, 3];
@@ -890,6 +891,7 @@ var Accessory = /** @class */ (function (_super) {
         var accessory = {
             aid: this.aid,
             services: this.services.map(function (service) { return service.internalHAPRepresentation(); }),
+            category: this.category,
         };
         var accessories = [accessory];
         if (!this.bridged) {

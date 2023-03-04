@@ -1142,6 +1142,7 @@ export class Accessory extends EventEmitter {
     const accessory: AccessoryJsonObject = {
       aid: this.aid!,
       services: await Promise.all(this.services.map(service => service.toHAP(connection, contactGetHandlers))),
+      category: this.category,
     };
 
     const accessories: AccessoryJsonObject[] = [accessory];
@@ -1169,6 +1170,7 @@ export class Accessory extends EventEmitter {
     const accessory: AccessoryJsonObject = {
       aid: this.aid!,
       services: this.services.map(service => service.internalHAPRepresentation()),
+      category: this.category,
     };
 
     const accessories: AccessoryJsonObject[] = [accessory];

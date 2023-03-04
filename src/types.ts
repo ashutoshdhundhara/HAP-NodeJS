@@ -159,6 +159,7 @@ export interface ServiceJsonObject {
 export interface AccessoryJsonObject {
   aid: number,
   services: ServiceJsonObject[], // must not be empty, max 100 services
+  category: number,
 }
 
 /**

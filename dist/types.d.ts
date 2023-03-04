@@ -148,6 +148,7 @@ export interface ServiceJsonObject {
 export interface AccessoryJsonObject {
     aid: number;
     services: ServiceJsonObject[];
+    category: number;
 }
 /**
  * @group HAP Accessory Server
