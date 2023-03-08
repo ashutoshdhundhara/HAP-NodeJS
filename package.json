@@ -1,5 +1,5 @@
 {
-  "name": "hap-nodejs",
+  "name": "@ashutoshdhundhara/hap-nodejs",
   "version": "0.11.0",
   "description": "HAP-NodeJS is a Node.js implementation of HomeKit Accessory Server.",
   "main": "dist/index.js",
@@ -10,6 +10,9 @@
   "author": "Khaos Tian <khaos.tian@gmail.com> (https://tz.is/)",
   "homepage": "https://github.com/homebridge/HAP-NodeJS",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "@ashutoshdhundhara:registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "clean": "rimraf dist && rimraf coverage",
     "lint": "eslint 'src/**/*.{js,ts,json}'",
@@ -37,7 +40,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/homebridge/HAP-NodeJS.git"
+    "url": "https://github.com/ashutoshdhundhara/HAP-NodeJS.git"
   },
   "bugs": {
     "url": "https://github.com/homebridge/HAP-NodeJS/issues"
